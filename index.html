@@ -3,7 +3,97 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>NovaTech Solutions</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body></body>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<nav class="navbar container">
+				<h1 class="logo">NovaTech</h1>
+				<ul class="nav-links" id="navLinks">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<button class="menu-toggle" id="menuToggle">☰</button>
+			</nav>
+		</header>
+		<!-- Hero Section -->
+		<section id="home" class="hero">
+			<div class="container hero-content">
+				<h2>Building Modern Web Solutions</h2>
+				<p>
+					We create fast, responsive, and scalable web applications for growing
+					businesses.
+				</p>
+				<button class="btn">Get Started</button>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about" class="section container">
+			<h2>About Us</h2>
+			<p>
+				NovaTech Solutions is a small digital agency focused on delivering clean
+				UI, efficient backend systems, and cloud‑ready applications. Our mission
+				is to help startups and companies grow with modern technology.
+			</p>
+		</section>
+
+		<!-- Services Section -->
+		<section id="services" class="section light">
+			<div class="container">
+				<h2>Our Services</h2>
+				<div class="services-grid">
+					<div class="card">
+						<h3>Web Development</h3>
+						<p>
+							Responsive and high‑performance websites using modern
+							technologies.
+						</p>
+					</div>
+					<div class="card">
+						<h3>UI/UX Design</h3>
+						<p>
+							Clean, user‑friendly interfaces that improve engagement and
+							usability.
+						</p>
+					</div>
+					<div class="card">
+						<h3>Cloud Integration</h3>
+						<p>
+							Secure deployment, scaling, and DevOps‑ready infrastructure
+							solutions.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="section container">
+			<h2>Contact Us</h2>
+			<form id="contactForm" class="contact-form">
+				<input type="text" id="name" placeholder="Your Name" required />
+				<input type="email" id="email" placeholder="Your Email" required />
+				<textarea
+					id="message"
+					rows="5"
+					placeholder="Your Message"
+					required
+				></textarea>
+				<button type="submit" class="btn">Send Message</button>
+				<p id="formStatus" class="form-status"></p>
+			</form>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p>© 2026 NovaTech Solutions. All rights reserved.</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
 </html>
